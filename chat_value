@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Read the Excel file
+excel_data = pd.read_excel('example.xlsx')
+
+# Convert the Excel data to a JSON object
+json_data = excel_data.to_json(orient='records')
+
+# Print the JSON data
+print(json_data)
